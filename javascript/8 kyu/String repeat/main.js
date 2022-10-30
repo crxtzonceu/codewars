@@ -5,3 +5,6 @@ Examples (input -> output)
 5, "Hello" -> "HelloHelloHelloHelloHello" */
 
 const repeatStr = (x, y) => Array(x).fill(y).join('')
+// i am already proud with my answer but ill still include the top answer since i dont know that that method exist
+
+const repeatStr2 = (a, b) => b.repeat(a)
