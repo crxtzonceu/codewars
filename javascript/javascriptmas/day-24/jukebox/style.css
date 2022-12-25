@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0F0F0F;
+  background: linear-gradient(to bottom, gold, silver);
+  font-family: cursive;
+}
+
+h1, h2 {
+  font-size: 40px;
+  color: blue;
+  text-align: center;
+  text-shadow: 0 0 5px white;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+#player {
+background-color: #DEEAEE;
+}
+
+button {
+  font-family: inherit;
+  background-color: #92F5AB;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 10px 0;
+  box-shadow: 0 0 4px white;
+}
+
+button:hover {
+  background-color: #FF9492;
+  border: 3px solid #2F4858;
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.highlighted {
+  background: #6AD5E7;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: px solid purple;
+  animation: blink 2s ease-in-out infinite;
+  text-decoration: underline;
+}
+
+.highlighted::after {
+  content: " ~ (Now Playing)"
+}
+
+h2 { 
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+      color: red;   
+  }
+  50% {
+      color: green;
+  }
+  100% {
+      color: red;
+  }
+}
+
+.songs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 10px;
+}
