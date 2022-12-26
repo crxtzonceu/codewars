@@ -14,6 +14,13 @@
  *
  */
 
+
+/* Note
+  He made a intro class div and put the background and padding there
+  He apply the container on the content below too so that i will have its maximum max-width
+  He made the width 80& so that it wont stretch the content
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -24,18 +31,17 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.intro {
   background: #23424a;
   color: white;
-  margin: 0 auto;
   padding: 50px 0;
 }
 
 .intro-content {
   width: 50%;
-}
-
-.center {
-  max-width: 750px;
-  margin: 0 auto;
 }
